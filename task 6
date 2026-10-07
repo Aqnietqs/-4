@@ -1,0 +1,42 @@
+package main
+
+import "fmt"
+
+func main() {
+	var age int = 25
+	fmt.Println(age)
+	age = age + 1
+	fmt.Println(age)
+
+	
+	var height int = 170
+	fmt.Println(height)
+	var height_in_meters float64 = float64(height) / 100
+	fmt.Println(height_in_meters)
+
+
+	var isStudent bool = true
+	fmt.Println(isStudent)
+
+
+	var temperature int = 25
+	fmt.Println(temperature)
+	if temperature >= 20 {
+		fmt.Println("Погода теплая")
+	} else {
+		fmt.Println("Погода холодная")
+	}
+
+
+	var favoriteQuote string = "Лучший способ начать — перестать говорить и начать делать."
+	fmt.Println(favoriteQuote)
+
+
+	var PI float64 = 3.14
+	fmt.Println(PI)
+
+	// PI = "3.1415"
+	// Не сработает: в Go статическая типизация. PI имеет тип float64,
+	// и присвоить ей строку (string) нельзя, компилятор выдаст ошибку.
+
+}
